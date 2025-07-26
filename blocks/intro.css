@@ -22,7 +22,7 @@
 
 .intro__subtitle {
     max-width: 738px;
-    margin: 0 0 10px;
+    margin: 0;
     font-family: "inter", sans-serif;
     font-weight: 400;
     font-size: 24px;
@@ -31,17 +31,18 @@
     color: #ffffff;
     padding-top: 40px;
     align-self: flex-start;
+    font-style: normal;
 }
 
 .intro__author {
     max-width: 732px;
-    margin: 0 0 32px;
+    margin: 0;
     font-family: "inter", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
     line-height: 34px;
-    text-align: end;
+    text-align: right;
     color: #ffffff;
     padding-top: 10px;
 }
@@ -86,22 +87,22 @@
 
 @media screen and (max-width: 544px) {
     .intro {
-        width: 100%;
+        width: 90%;
         padding-left: 24px;
         padding-top: 64px;
     }
 
     .intro__title {
-        font-size: 30px;
-        line-height: 34px;
+        font-size: 32px;
+        line-height: 35px;
     }
     .intro__subtitle {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 24px;
+        line-height: 30px;
     }
     .intro__author {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 24px;
+        line-height: 30px;
     }
     .intro__description {
         font-size: 16px;
