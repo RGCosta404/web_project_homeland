@@ -1,0 +1,168 @@
+.places{
+    margin: 90px 148px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 80px;
+}
+
+.places__card {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "title person"
+        "image text-first"
+        "image text-second"
+        "button text-third";
+    gap: 40px;
+}
+
+.places__title {
+    grid-area: title;
+    font-family: inter, sans-serif;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 76px;
+    margin: 0;
+}
+
+.places__person {
+    grid-area: person;
+    margin-top: auto;
+}
+
+.places__person-artista {
+    font-family: inter, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #aaaaaa;
+    text-transform: uppercase;
+}
+
+.places__person-name {
+    font-family: inter;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.places__image {
+    grid-area: image;
+    width: 100%;
+    height: 460px;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.places__image:hover {
+    opacity: 0.5;
+}
+
+.places__text-first,
+.places__text-second,
+.places__text-third {
+    font-family: inter, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 163%;
+    margin: 0;
+}
+
+.places__text-first {
+    grid-area: text-first;
+}
+
+.places__text-second {
+    grid-area: text-second;
+}
+
+@media screen and (max-width: 1024px) {
+    .places{
+        margin: 88px 24px 0;
+        row-gap: 72px;
+    }
+    
+    .places__title {
+        font-size: 42px;
+        line-height: 46px;
+    }
+    
+    .places__text-first,
+    .places__text-second,
+    .places__text-tird {
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width: 544px) {
+    .places{
+        display: flex;
+        margin: 62px 16px 0;
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .places__card {
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .places__title {
+        font-size: 32px;
+        line-height: 35px;
+    }
+    
+    .places__image {
+        height: 320px;
+        width: 100%;
+    }
+    
+    .places__text-first,
+    .places__text-second,
+    .places__text-tird {
+        font-size: 16px;
+    }
+    
+}
+
+.places__button {
+    grid-area: button;
+    max-width: 90%;
+    height: 48px;
+    border-radius: 4px;
+    font-family: inter, sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    color: #ffffff;
+    text-decoration: none;
+    box-shadow: 5px 5px 10px 0px #00000040;
+    border: none;
+    background-image: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+}
+
+.places__button:hover {
+    background-image: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+    box-shadow: 5px 5px 10px 0px #00000040;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .places__button {
+        max-width: 100%;
+        background-image: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+        box-shadow: 5px 5px 10px 0px #00000040;
+    }
+    
+}
+
+@media screen and (max-width: 544px) {
+    .places__button {
+        max-width: 100%;
+        font-size: 14px;
+        background-image: linear-gradient(90deg, #0278fe 0%, #003a7b 99.98%);
+        box-shadow: 5px 5px 10px 0px #00000040;
+    }
+    
+}
